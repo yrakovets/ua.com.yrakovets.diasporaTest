@@ -50,7 +50,8 @@ public class EndToEndTest extends DiasporaTest {
         //assertPostIsCommented(user1.getLogin(), postText);
 
         page.likePost(user1.getLogin(), postText);
-        //assertPostIsLiked(user1.getLogin(), postText);
+        //TODO: realize asserting
+        page.assertPostIsLiked(user1.getLogin(), postText);
 
         page.logout();
 
@@ -75,8 +76,6 @@ public class EndToEndTest extends DiasporaTest {
         page.unfriendAll();
         page.logout();
     }
-
-
 
 }
 

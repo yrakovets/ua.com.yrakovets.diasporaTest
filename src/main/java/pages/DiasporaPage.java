@@ -195,4 +195,8 @@ public class DiasporaPage {
     public void likePost(String login, String postText){
         findPost(login, postText).$(".like").click();
     }
+
+    public void assertPostIsLiked(String login, String postText) {
+        //TODO: realize method
+    }
 }
